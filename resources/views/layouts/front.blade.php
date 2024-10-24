@@ -181,7 +181,7 @@
             position: relative;
         }
         .banner.bg-charity2 {
-            background-image: url('{{ asset("/img/bgcharity2.png") }}');
+            background-image: url('{{ asset("/img/bg.png") }}');
             background-size: contain;
             background-repeat: no-repeat;
             background-position: bottom;
@@ -332,7 +332,7 @@
         integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous">
     </script>
 
-    @stack('scripts_vendor')    
+    @stack('scripts_vendor')
 
     <!-- AdminLTE App -->
     <script src="{{ asset('/AdminLTE/dist/js/adminlte.js') }}"></script>

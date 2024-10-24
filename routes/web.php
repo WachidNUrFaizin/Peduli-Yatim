@@ -11,7 +11,8 @@ use App\Http\Controllers\{
     ReportController,
     SettingController,
     SubscriberController,
-    UserProfileInformationController
+    UserProfileInformationController,
+    AnalysisController  // <- Tambahkan ini
 };
 use App\Http\Controllers\Front\{
     AboutController,
@@ -122,12 +123,15 @@ Route::group([
         Route::get('/report/data/{start}/{end}', [ReportController::class, 'data'])->name('report.data');
         Route::get('/report/pdf/{start}/{end}', [ReportController::class, 'exportPDF'])->name('report.export_pdf');
         Route::get('/report/excel/{start}/{end}', [ReportController::class, 'exportExcel'])->name('report.export_excel');
+
+        // Route untuk Analisis
+        Route::get('/analysis', [AnalysisController::class, 'index'])->name('analysis.index');
     });
 });
 
 Route::get('payment_confirmed', function () {
     $donation = \App\Models\Donation::find(13);
-    
+
     return view('mail.payment_confirmed', compact('donation'));
 });
 

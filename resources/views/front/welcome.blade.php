@@ -7,7 +7,7 @@
     /* Jumbotron */
     .jumbotron {
         height: 87.5vh;
-        background-image: url('{{ asset("/img/bgcharity1.jpg") }}');
+        background-image: url('{{ asset("/img/bg2.jpg") }}');
         background-size: cover;
         background-repeat: no-repeat;
         border-radius: 0;
@@ -65,12 +65,13 @@
 <div class="jumbotron d-flex justify-content-center align-items-center mb-0">
     <div class="shadow-sm p-3 bg-white-50 rounded">
         <div class="card p-4 border text-center mb-0">
-            <h1 class="display-4 font-weight-bold">GALANG DANA</h1>
+            <h1 class="display-4 font-weight-bold">D</h1>
             <p class="lead text-capitalize mt-3">Untuk hal yang anda perjuangkan demi kemanusiaan</p>
             <a href="{{ url('/campaign') }}" class="btn btn-primary btn-lg rounded w-50 m-auto">Galang Dana Sekarang</a>
         </div>
     </div>
 </div>
+
 
 {{-- Info Campaign --}}
 <div class="info-campaign bg-dark">
