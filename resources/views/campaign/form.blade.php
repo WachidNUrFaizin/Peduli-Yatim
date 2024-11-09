@@ -89,18 +89,18 @@
                 <label for="receiver">Penerima</label>
                 <div class="custom-control custom-radio">
                     <input type="radio" name="receiver" class="custom-control-input" id="saya" value="Saya Sendiri">
-                    <label class="custom-control-label font-weight-normal" for="saya">Saya Sendiri</label>
+                    <label class="custom-control-label font-weight-normal" for="saya">Peduli Yatim PENS</label>
                 </div>
                 <div class="custom-control custom-radio">
                     <input type="radio" name="receiver" class="custom-control-input" id="keluarga" value="Keluarga / Kerabat">
-                    <label class="custom-control-label font-weight-normal" for="keluarga">Keluarga / Kerabat</label>
+                    <label class="custom-control-label font-weight-normal" for="keluarga">Panti Asuhan</label>
                 </div>
                 <div class="custom-control custom-radio">
-                    <input type="radio" name="receiver" class="custom-control-input" id="organisasi" value="Organisasi / Lembaga">
+                    <input type="hidden" name="receiver" class="custom-control-input" id="organisasi" value="Organisasi / Lembaga">
                     <label class="custom-control-label font-weight-normal" for="organisasi">Organisasi / Lembaga</label>
                 </div>
                 <div class="custom-control custom-radio">
-                    <input type="radio" name="receiver" class="custom-control-input" id="lainnya" value="Lainnya">
+                    <input type="hidden" name="receiver" class="custom-control-input" id="lainnya" value="Lainnya">
                     <label class="custom-control-label font-weight-normal" for="lainnya">Lainnya</label>
                 </div>
             </div>

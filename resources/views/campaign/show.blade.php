@@ -9,7 +9,7 @@
 
 @push('css')
 <style>
-    .daftar-donasi.nav-pills .nav-link.active, 
+    .daftar-donasi.nav-pills .nav-link.active,
     .daftar-donasi.nav-pills .show>.nav-link {
         background: transparent;
         color: var(--dark);
@@ -155,11 +155,11 @@
 @push('scripts')
 <script>
     let modal = '#modal-form';
-    
+
     function editForm(url, status, message, color) {
         $(modal).modal('show');
         $(`${modal} form`).attr('action', url);
-        
+
         $(`${modal} [name=status]`).val(status);
         $(`${modal} .text-message`).text(message);
         $(`${modal} .alert`).removeClass('alert-success alert-danger').addClass(`alert-${color}`)

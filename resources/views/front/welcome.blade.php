@@ -63,51 +63,49 @@
 @section('content')
 {{-- Jumbotron --}}
 <div class="jumbotron d-flex justify-content-center align-items-center mb-0">
-    <div class="shadow-sm p-3 bg-white-50 rounded">
-        <div class="card p-4 border text-center mb-0">
-            <h1 class="display-4 font-weight-bold">D</h1>
-            <p class="lead text-capitalize mt-3">Untuk hal yang anda perjuangkan demi kemanusiaan</p>
-            <a href="{{ url('/campaign') }}" class="btn btn-primary btn-lg rounded w-50 m-auto">Galang Dana Sekarang</a>
-        </div>
+    <div class="container text-center text-white">
+        <h1 class="display-4 font-weight-bold">Mari Kita Saling Berbagi</h1>
+        <p class="lead">Peduli Yatim adalah platform penggalangan dana online yang memungkinkan siapa pun untuk membantu orang lain dalam kebaikan.</p>
+        <a href="{{ url('/donation') }}" class="btn btn-primary btn-lg rounded">Donasi</a>
     </div>
 </div>
 
 
 {{-- Info Campaign --}}
-<div class="info-campaign bg-dark">
-    <div class="container text-white py-5">
-        <div class="row text-center">
-            <div class="col-lg-3 col-md-6">
-                <p class="icon">
-                    <i class="fas fa-smile fa-4x"></i>
-                </p>
-                <p class="fa-2x font-weight-bold">{{ format_uang($donatur) }}</p>
-                <p class="fa-2x text mb-0 text-uppercase">Donatur</p>
-            </div>
-            <div class="col-lg-3 col-md-6">
-                <p class="icon">
-                    <i class="fas fa-rocket fa-4x"></i>
-                </p>
-                <p class="fa-2x font-weight-bold">{{ format_uang($misiSukses) }}</p>
-                <p class="fa-2x text mb-0 text-uppercase">Misi Sukses</p>
-            </div>
-            <div class="col-lg-3 col-md-6">
-                <p class="icon">
-                    <i class="fas fa-user-plus fa-4x"></i>
-                </p>
-                <p class="fa-2x font-weight-bold">{{ format_uang($relawan) }}</p>
-                <p class="fa-2x text mb-0 text-uppercase">Relawan</p>
-            </div>
-            <div class="col-lg-3 col-md-6">
-                <p class="icon">
-                    <i class="fas fa-globe fa-4x"></i>
-                </p>
-                <p class="fa-2x font-weight-bold">{{ format_uang($projek) }}</p>
-                <p class="fa-2x text mb-0 text-uppercase">Projek</p>
-            </div>
-        </div>
-    </div>
-</div>
+{{--<div class="info-campaign bg-dark">--}}
+{{--    <div class="container text-white py-5">--}}
+{{--        <div class="row text-center">--}}
+{{--            <div class="col-lg-3 col-md-6">--}}
+{{--                <p class="icon">--}}
+{{--                    <i class="fas fa-smile fa-4x"></i>--}}
+{{--                </p>--}}
+{{--                <p class="fa-2x font-weight-bold">{{ format_uang($donatur) }}</p>--}}
+{{--                <p class="fa-2x text mb-0 text-uppercase">Donatur</p>--}}
+{{--            </div>--}}
+{{--            <div class="col-lg-3 col-md-6">--}}
+{{--                <p class="icon">--}}
+{{--                    <i class="fas fa-rocket fa-4x"></i>--}}
+{{--                </p>--}}
+{{--                <p class="fa-2x font-weight-bold">{{ format_uang($misiSukses) }}</p>--}}
+{{--                <p class="fa-2x text mb-0 text-uppercase">Misi Sukses</p>--}}
+{{--            </div>--}}
+{{--            <div class="col-lg-3 col-md-6">--}}
+{{--                <p class="icon">--}}
+{{--                    <i class="fas fa-user-plus fa-4x"></i>--}}
+{{--                </p>--}}
+{{--                <p class="fa-2x font-weight-bold">{{ format_uang($relawan) }}</p>--}}
+{{--                <p class="fa-2x text mb-0 text-uppercase">Relawan</p>--}}
+{{--            </div>--}}
+{{--            <div class="col-lg-3 col-md-6">--}}
+{{--                <p class="icon">--}}
+{{--                    <i class="fas fa-globe fa-4x"></i>--}}
+{{--                </p>--}}
+{{--                <p class="fa-2x font-weight-bold">{{ format_uang($projek) }}</p>--}}
+{{--                <p class="fa-2x text mb-0 text-uppercase">Projek</p>--}}
+{{--            </div>--}}
+{{--        </div>--}}
+{{--    </div>--}}
+{{--</div>--}}
 
 {{-- Dana Tersalurkan --}}
 <div class="dana-tersalurkan">
@@ -153,18 +151,76 @@
 </div>
 
 {{-- Galang Dana2 --}}
-<div class="galang-dana2 bg-white">
-    <div class="container py-5">
-        <div class="row">
-            <div class="col-lg-12 text-center">
-                <h2 class="fa-3x mb-4">GALANG DANA DI Peduli Yatim</h2>
-                <h3 class="font-weight-normal mb-4">
-                    Dari menolong anggota keluarga, hingga membangun jembatan di desa, <br>
-                    ribuan orang telah menggunakan Peduli Yatim untuk galang dana.
-                </h3>
-                <a href="{{ url('/campaign') }}" class="btn btn-primary btn-lg rounded m-auto">Galang Dana Sekarang</a>
-            </div>
-        </div>
-    </div>
-</div>
+{{--<div class="galang-dana2 bg-white">--}}
+{{--    <div class="container py-5">--}}
+{{--        <div class="row">--}}
+{{--            <div class="col-lg-12 text-center">--}}
+{{--                <h2 class="fa-3x mb-4">GALANG DANA DI Peduli Yatim</h2>--}}
+{{--                <h3 class="font-weight-normal mb-4">--}}
+{{--                    Dari menolong anggota keluarga, hingga membangun jembatan di desa, <br>--}}
+{{--                    ribuan orang telah menggunakan Peduli Yatim untuk galang dana.--}}
+{{--                </h3>--}}
+{{--                <a href="{{ url('/campaign') }}" class="btn btn-primary btn-lg rounded m-auto">Galang Dana Sekarang</a>--}}
+{{--            </div>--}}
+{{--        </div>--}}
+{{--    </div>--}}
+{{--</div>--}}
+
+
+
+
+{{-- Artikel Donasi --}}
+{{--<div class="artikel-donasi bg-light py-5">--}}
+{{--    <div class="container">--}}
+{{--        <div class="row">--}}
+{{--            <div class="col-lg-12 text-center">--}}
+{{--                <h2 class="fa-3x mb-4">Berbagi </h2>--}}
+{{--                <h3 class="font-weight-normal mb-4">--}}
+{{--                    Baca artikel-artikel menarik tentang donasi dan kisah inspiratif para donatur.--}}
+{{--                </h3>--}}
+{{--            </div>--}}
+
+{{--            <div class="col-lg-4 col-md-6 mb-4">--}}
+{{--                <div class="card h-100">--}}
+{{--                    <div class="card-body">--}}
+{{--                        <h5 class="card-title"></h5>--}}
+{{--                        <p class="card-text">Deskripsi singkat artikel 1 tentang pentingnya donasi dan dampaknya--}}
+{{--                            terhadap masyarakat.</p>--}}
+{{--                    </div>--}}
+{{--                    <div class="card-footer">--}}
+{{--                        <a href="#" class="btn btn-primary">Baca Artikel</a>--}}
+{{--                    </div>--}}
+{{--                </div>--}}
+{{--            </div>--}}
+
+{{--            <div class="col-lg-4 col-md-6 mb-4">--}}
+{{--                <div class="card h-100">--}}
+{{--                    <div class="card-body">--}}
+{{--                        <h5 class="card-title">Judul Artikel 2</h5>--}}
+{{--                        <p class="card-text">Deskripsi singkat artikel 2 tentang cara berdonasi yang efektif dan--}}
+{{--                            efisien.</p>--}}
+{{--                    </div>--}}
+{{--                    <div class="card-footer">--}}
+{{--                        <a href="#" class="btn btn-primary">Baca Artikel</a>--}}
+{{--                    </div>--}}
+{{--                </div>--}}
+{{--            </div>--}}
+
+{{--            <div class="col-lg-4 col-md-6 mb-4">--}}
+{{--                <div class="card h-100">--}}
+{{--                    <div class="card-body">--}}
+{{--                        <h5 class="card-title">Judul Artikel 3</h5>--}}
+{{--                        <p class="card-text">Deskripsi singkat artikel 3 tentang kisah inspiratif para donatur.</p>--}}
+{{--                    </div>--}}
+{{--                    <div class="card-footer">--}}
+{{--                        <a href="#" class="btn btn-primary">Baca Artikel</a>--}}
+{{--                    </div>--}}
+{{--                </div>--}}
+{{--            </div>--}}
+{{--        </div>--}}
+{{--    </div>--}}
+{{--</div>--}}
+
+
+
 @endsection

@@ -20,7 +20,7 @@ class CampaignController extends Controller
     public function index()
     {
         $category = Category::orderBy('name')->get()->pluck('name', 'id');
-
+        // dump($category->toArray());
         return view('campaign.index', compact('category'));
     }
 
@@ -33,10 +33,10 @@ class CampaignController extends Controller
                 $query->where('status', $request->status);
             })
             ->when(
-                $request->has('start_date') && 
-                $request->start_date != "" && 
-                $request->has('end_date') && 
-                $request->end_date != "", 
+                $request->has('start_date') &&
+                $request->start_date != "" &&
+                $request->has('end_date') &&
+                $request->end_date != "",
                 function ($query) use ($request) {
                     $query->whereBetween('publish_date', $request->only('start_date', 'end_date'));
                 }
@@ -49,7 +49,7 @@ class CampaignController extends Controller
                 return $query->title .'<br><small>'. $query->short_description .'</small>';
             })
             ->editColumn('path_image', function ($query) {
-                return '<img src="'. Storage::disk('public')->url($query->path_image) .'" class="img-thumbnail">';
+                return '<img src="'. asset('Storage/'.$query->path_image).'" class="img-thumbnail">';
             })
             ->editColumn('status', function ($query) {
                 return '<span class="badge badge-'. $query->statusColor() .'">'. $query->status .'</span>';
